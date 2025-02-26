@@ -1,0 +1,41 @@
+.container_bigcard 
+{
+    border: solid white 2px;
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media(min-width: 700px)
+    {
+        width: 200px;
+        margin-bottom: 0;
+    }
+    @media(min-width: 1000px)
+    {
+        width: 400px;
+    }
+} 
+
+.title_bigcard > h1 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+.description_bigcard > p > a {
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image_bigcard > img {
+    width: 100%;
+    height: auto;
+    @media(min-width: 700px) {
+        min-width: 200px;
+      }
+      @media(min-width: 1000px) {
+        min-width: 400px;
+      }
+}
